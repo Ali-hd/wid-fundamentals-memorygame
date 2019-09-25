@@ -1,3 +1,4 @@
+/* smooth scrolling */
 html {
   	scroll-behavior: smooth;
 }
@@ -47,10 +48,6 @@ a{
 	margin-right: 20px;
 	border-bottom: 2px solid transparent;
 }
-/* *//* *//* *//* *//* *//* *//* *//* *//* */
-#Instructions, #Game{
-	
-}
 
 h2{
 	font-family: "Raleway",sans-serif;
@@ -80,11 +77,11 @@ footer{
 	font-size: 14px;
 	letter-spacing: .08em;
 	font-weight: 500;
-/*
+/* fixed footer not resizing properly when zooming out */
 	width: 100%;
-	position: absolute;
+	position: absolute; /* absolute covers content*/
 	bottom: 0;
-*/
+	box-sizing:border-box;
 }
 .copyright{
 	float: left;
@@ -113,7 +110,7 @@ a:hover {
 h3{
 	font-family: "DROID SERIF",sans-serif;
 	line-height: 26px;
-	font-size: 18px;
+	font-size: 14px;
 	font-weight: 400px;
 }
 
